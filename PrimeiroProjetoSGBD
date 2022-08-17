@@ -1,0 +1,49 @@
+Sistematização Ana Carolina Vieira
+USE Sistematização
+CREATE TABLE Sócio (
+ idSócio INTEGER ,
+ dataNascimentoSócio VARCHAR(60) NULL,
+ CATEGORIA VARCHAR NULL,
+ PRIMARY KEY(idSócio)
+);
+INSERT INTO Sócio (idSócio, dataNascimentoSócio, CATEGORIA) VALUES(1, 'Ana', 2,
+'12/12/1980', 3, 'Piloto');
+CREATE TABLE Piloto (
+ idPiloto INTEGER,
+ Sócio_idSócio INTEGER NOT NULL,
+ brevêPiloto VARCHAR NULL,
+
+);
+INSERT INTO Piloto (idPiloto, Sócio_idSócio, brevêPiloto) VALUES(1,'Ana', 2, 'Ana',
+3, 'az3400');
+CREATE TABLE Aluno (
+ Sócio_idSócio INTEGER NOT NULL,
+ idAluno INTEGER,
+ horasDeVôo INTEGER NULL,
+
+);
+INSERT INTO Aluno (idAluno, horasDeVôo) VALUES(1, 'Pedro', 2, '230');
+CREATE TABLE Instrutor (
+ idInstrutor INTEGER ,
+ Piloto_idPiloto INTEGER NOT NULL,
+ nomeCurso VARCHAR NULL,
+ instituiçãoCurso VARCHAR NULL,
+ dataDiplomação VARCHAR NULL,
+ PRIMARY KEY(idInstrutor, Piloto_idPiloto),
+ INDEX Instrutor_FKIndex1(Piloto_idPiloto, Piloto_Sócio_idSócio)
+);
+INSERT INTO Instrutor (idInstrutor, Piloto_idPiloto, nomeCurso, instituiçãoCurso,
+dataDiplomação) VALUES(1, 'Ana', 2, 'Pedro', 3, 'Aerosol', 4, '30/03/2022');
+CREATE TABLE Vôo (
+ idVôo INTEGER ,
+ Instrutor_Piloto_idPiloto INTEGER NOT NULL,
+ Instrutor_idInstrutor INTEGER NOT NULL,
+ dataVôo VARCHAR NULL,
+ horaDecolagem VARCHAR NULL,
+ horaPouso VARCHAR NULL,
+ briefVôo VARCHAR,
+ PRIMARY KEY(idVôo, Instrutor_Piloto_idPiloto, Instrutor_idInstrutor,
+Instrutor_Piloto_Sócio);
+ INSERT INTO Vôo (idVôo, Instrutor_Piloto_idPiloto, dataVôo, horaDecolagem,
+horaPouso, briefVôo) VALUES(1,'papa32', 2, 'Ana', 3,'20/03/2022', 4, '1:30pm', 5,
+'14;00pm', 6,'aprovado');
