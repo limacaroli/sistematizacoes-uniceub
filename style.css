@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine; 
+}
+
+.cidade img {
+	max-width:300px;
+    max: height 200px;
+    width: auto;
+    height: auto;
+
+}
+	
+
+.menuSuperior {
+	position: relative;
+	overflow: hidden;
+	background-color: greenyellow;
+}
+
+.menuSuperior a {
+	float: right;
+	color: black;
+	text-align: right;
+	text-decoration: right;
+	padding: 40px 20px 15px;
+	margin-right: 50px;
+	font-size: 16px;
+}
+
+.itemAtivado {
+	lighting-color: lightblue;
+}
+
+.nossoTime {
+	float:left;
+}
+
+.nossoTime p {
+	margin-left: 10px;
+	float:right;
+}
+
+.nossoTrabalho {
+	float: right;
+	border-left: solid;
+	background-color: green;
+	width: 1300px;
+	height: 500px;
+}
+
+.nossoTrabalho h1 {
+	font-family: Gill Sans, sans-serif;
+	color: white;
+	margin-left: 550px;
+}
+
+.nossoTrabalho h3 {
+	font-family: Times New Roman, serif;
+	color: white;
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-top: 35px;
+	justify-content: center;
+}
+
+.nossoTrabalho img {
+	padding-left: 600px;
+	padding-top: 80px;
+	width: 120px;
+	height: 120px;
+}
+
+.escolhaDestino h2 {
+	font-family: Gill Sans, sans-serif;
+	margin-left: 1100px;
+}
+
+.escolhaDestino form {
+	margin-left: 1050px;
+}
+
+h1 {
+	font-family: Gill Sans, sans-serif;
+	margin-left: 400px;
+}
+
+hr {
+	margin: 0px;
+	border: solid;
+}
+
+.foto1 {
+	float: left;
+}
+
+.foto1 img {
+	height: 100px;
+	width: 80px;
+}
+
+.foto1 p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	margin: 25px 0px 15px 20px;
+}
+
+.foto2 {
+	float: left;
+	clear: both;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+
+.foto2 img {
+	height: 100px;
+	width: 80px;
+}
+
+.foto2 p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	margin: 35px 0px 15px 20px;
+}
+
+.foto3 {
+	float: left;
+	clear: both;
+	margin-top: 30px;
+}
+
+.foto3 img {
+	height: 100px;
+	width: 80px;
+}
+
+.foto3 p {
+	font-family: Georgia, serif;
+	font-size: 14px;
+	margin: 25px 0px 15px 20px;
+}
+
+form {
+	font-family: Gill Sans, sans-serif;
+}
+
+#observacao {
+	width: 400px;
+	height: 140px;
+}

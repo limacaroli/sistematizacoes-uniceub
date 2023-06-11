@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Turismo com Nativos - Conheça o Brasil com Guias Moradores</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<nav class="menuSuperior">
+			<div class="cidade">
+				<img src="imagens/cidade.png" alt="Rio de Janeiro">
+			</div>
+			<a href="#">Quer ser guia? Saiba mais!</a>
+			<a href="#">Nossa Visão</a>
+			<a href="#">Informações</a>
+			<a class="itemAtivado" href="#">Início</a>
+		</nav>
+	</div>
+	<hr>
+	<div class="nossoTime">
+		<h1>Nosso Time</h1>
+		<div class="foto1">
+			<img src="imagens/foto1.png" alt="Ana Carolina">
+			<p>Ana Carolina - formada em Direito e apaixonada por viagens. O seu antigo hobby virou trabalho. Foi uma das idealizadoras da Startup. É responsável por selecionar e capacitar os guias locais.</p>
+		</div>
+		<div class="foto2">
+			<img src="imagens/foto2.png" alt="André César">
+			<p>André César - economista, contador e mestre em gestão. Embarcou na ideia da esposa e hoje é responsável pela parte administrativa e contábil da startup.</p>
+		</div>
+			<div class="foto3">
+			<img src="imagens/foto3.png" alt="Pedro Vieira">
+			<p>Pedro - é o mascote da empresa. Encanta os clientes com a sua curiosidade e com o seu conhecimento sobre as principais cidades do Brasil.</p>
+		</div>
+	</div>
+	<div class="nossoTrabalho">
+		<h1>Nosso Trabalho</h1>
+		<h3>Descubra o Brasil com a Turismo com Nativos! Nossos passeios privados oferecem uma experiência única e personalizada em qualquer destino. Temos guias selecionados e muito bem treinados para te levar a qualquer ponto turístico do Brasil. ENTRE EM CONTATO!</h3>
+		<img src="imagens/chaveicon.png" alt="Family Business">
+	</div>
+	<hr style="margin-top: 500px">
+	<div class="escolhaDestino">
+		<h2>Para onde você quer ir? Faça sua reserva aqui:</h2>
+		<form action="" method="post">
+			<table>
+				<tr>
+					<td><label for="nome">Nome:</label></td>
+					<td><input type="text" placeholder="Insira seu nome" id="nome" minlength="3" maxlength="30" required></td>
+				</tr>
+				<tr>
+					<td><label for="telefone">Telefone:</label></td>
+					<td><input type="text" placeholder="Ex: (99) 99999-9999" id="telefone" minlength="10" maxlength="15" required></td>
+				</tr>
+				<tr>
+					<td><label for="email">E-mail:</label></td>
+					<td><input type="email" placeholder="nome@hotmail.com" id="email" minlength="6" maxlength="50" required></td>
+				</tr>
+				<tr>
+					<td><label for="cidade">Cidade:</label></td>
+					<td><input type="text" placeholder="Insira sua cidade" id="cidade" minlength="3" maxlength="50" required></td>
+				</tr>
+			</table>
+			<br>
+			<label>Alguma observação importante? Descreva abaixo:</label>
+			<br>
+			<textarea id="observacao" minlength="30" maxlength="300" required></textarea>
+			<br>
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+</body>
+</html>
